@@ -1,2 +1,4 @@
-# peleke
-Peleke: Protein Language Model for Traget Antibody Design
+# peleke 🦋
+Protein Language Models for Targeted Antibody Design
+
+<h3 align="center"> Silico Biosciences</h3>
