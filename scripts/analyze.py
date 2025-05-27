@@ -4,8 +4,8 @@ from transformers import AutoTokenizer
 from peft import PeftModel
 
 ## Load model and tokenizer
-model = PeftModel.from_pretrained("tuplexyz/peleke-phi4", device_map="auto", torch_dtype="auto")
-tokenizer = AutoTokenizer.from_pretrained("tuplexyz/peleke-phi4", trust_remote_code=True)
+model = PeftModel.from_pretrained("silicobio/peleke-phi4", device_map="auto", torch_dtype="auto")
+tokenizer = AutoTokenizer.from_pretrained("silicobio/peleke-phi4", trust_remote_code=True)
 
 ## Example prompt
 prompt = "Antigen: MKT[LLI]LAV[AA]A\nAntibody: "

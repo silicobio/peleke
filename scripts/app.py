@@ -2,7 +2,7 @@ import gradio as gr
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 # Load model and tokenizer
-model_name = "tuplexyz/peleke-phi4"
+model_name = "silicobio/peleke-phi4"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
 
