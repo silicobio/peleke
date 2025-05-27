@@ -1,4 +1,5 @@
 # peleke 🦋
-Protein Language Models for Targeted Antibody Design
 
-<h3 align="center"> Silico Biosciences</h3>
+Protein Language Models for Targeted Antibody Design.
+
+<h3 align="right">Silico Biosciences</h3>
