@@ -1,7 +1,7 @@
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
-# Load model and tokenizer
+## Load model and tokenizer
 model_name = "silicobio/peleke-phi4"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
@@ -13,6 +13,7 @@ def generate_antibody(antigen):
     out = generator(prompt, max_new_tokens=200, temperature=0.9)[0]["generated_text"]
     return out.split("Antibody:")[-1].strip()
 
+## Interface
 gr.Interface(
     fn=generate_antibody,
     inputs=gr.Textbox(label="Epitope-Annotated Antigen Sequence", placeholder="MKT[LLI]LAV[AA]A"),
