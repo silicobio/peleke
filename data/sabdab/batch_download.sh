@@ -1,5 +1,5 @@
 #!/bin/bash
-## USAGE: ./batch_download.sh -f list_file.txt -p
+## USAGE: ./batch_download.sh -f list_file.txt -o ./pdbs -p
 # Script to download files from RCSB http file download services.
 # Use the -h switch to get help on usage.
 
