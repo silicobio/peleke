@@ -1,7 +1,9 @@
 transformers
 datasets
 pandas
+scipy
 torch
+torchvision
 peft==0.10.0
 accelerate
 bitsandbytes
