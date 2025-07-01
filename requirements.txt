@@ -2,8 +2,10 @@ transformers
 datasets
 pandas
 scipy
+-i https://download.pytorch.org/whl/cu126
 torch
 torchvision
+torchaudio
 peft==0.10.0
 accelerate
 bitsandbytes
