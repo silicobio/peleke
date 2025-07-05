@@ -7,12 +7,15 @@ Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
 ## Training Dataset
 
+The training dataset consists of paired antigen and antibody sequences, where the antigen is the target for which the antibody is generated. Thiss was curated from [SAbDab](https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/sabdab).
+
+
 | antigen               | antibody                                          |
 | --------------------- | ------------------------------------------------- |
 | `MKT[LLI]LAV[AA]A...` | `QVQLVQSGAEVKKPGAS...\|DIQMTQSPSSLSASVGDRVTITC...` |
 
 
-## Fine Tuning
+## Fine-Tuning
 
 ```bash
 python scripts/finetune.py
