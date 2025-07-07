@@ -4,7 +4,7 @@ import argparse
 
 def generate_antibody_sequence(
         antigen_sequence: str,
-        model_path: str="./peleke-phi4",
+        model_path: str="../models/peleke-phi-4",
         max_new_tokens: int=200,
         top_p: float=0.9,
         temperature: float=0.9,
@@ -29,7 +29,7 @@ def generate_antibody_sequence(
 def main():
     parser = argparse.ArgumentParser(description="Peleke🦋: Generate antibody sequences from antigen sequences.")
     parser.add_argument("--antigen", type=str, required=True, help="The input antigen sequence with epitope residues surrounded by [square brackets].")
-    parser.add_argument("--model_path", type=str, default="./peleke-phi4", help="Path to the pre-trained model.")
+    parser.add_argument("--model_path", type=str, default="../models/peleke-phi-4", help="Path to the pre-trained model.")
     parser.add_argument("--max_new_tokens", type=int, default=200, help="Maximum number of new tokens to generate.")
     parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling parameter.")
     parser.add_argument("--temperature", type=float, default=0.9, help="Temperature for sampling.")
