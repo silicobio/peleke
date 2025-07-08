@@ -24,5 +24,5 @@ python scripts/finetune.py
 ## Generate Antibody Sequences
 
 ```bash
-python scripts/generate.py --antigen "MKT[LLI]LAV[AA]A..."
+python scripts/generate.py --antigen "MKT[LLI]LAV[AA]A..." --model "peleke-phi-4"
 ```
