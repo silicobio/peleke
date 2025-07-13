@@ -14,16 +14,19 @@ The training dataset consists of paired antigen and antibody sequences, where th
 | --------------------- | ------------------------------------------------- |
 | `MKT[LLI]LAV[AA]A...` | `QVQLVQSGAEVKKPGAS...\|DIQMTQSPSSLSASVGDRVTITC...` |
 
-
 See the dataset: [data/sabdab/sabdab_sequences.csv](data/sabdab/sabdab_sequences.csv)
-## Fine-Tuning
 
-```bash
-python scripts/finetune.py
-```
+
 
 ## Generate Antibody Sequences
 
 ```bash
 python scripts/generate.py --antigen "MKT[LLI]LAV[AA]A..." --model "peleke-phi-4"
+```
+
+
+## Fine-Tuning
+
+```bash
+python scripts/finetune.py
 ```
