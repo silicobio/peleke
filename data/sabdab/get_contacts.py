@@ -170,7 +170,7 @@ def find_contacts(pdb_id, pdb_file, h_chain_id, l_chain_id, antigen_ids, antigen
         combined_results = [{
             'pdb_id': pdb_id,
             'antigen_ids': '|'.join(chain_list),
-            'highlighted_epitope_sequences': '|'.join(seq_list),
+            'highlighted_epitope_seqs': '|'.join(seq_list),
             'epitope_residues': '|'.join(res_list)
         }]
 
