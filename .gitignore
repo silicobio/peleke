@@ -183,5 +183,6 @@ requirementsV2.txt
 data/sabdab/contacts/    
 
 # Model checkpoints
-models/*/checkpoint-*
+# models/*/checkpoint-*
+models/*
 .Rhistory
