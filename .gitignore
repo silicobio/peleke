@@ -186,3 +186,4 @@ data/sabdab/contacts/
 # models/*/checkpoint-*
 models/*
 .Rhistory
+logs/
