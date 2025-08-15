@@ -15,7 +15,7 @@ python scripts/generate.py --antigen "MKT[LLI]LAV[AA]A..." --model "peleke-phi-4
 ```
 
 Currently, the supported models are:
-- [`peleke-phi-4`](https://huggingface.co/silicobio/peleke-phi-4), Based on [Microsoft's Phi-4](https://huggingface.co/microsoft/phi-4) model.
+- [`peleke-phi-4`](https://huggingface.co/silicobio/peleke-phi-4), based on [Microsoft's Phi-4](https://huggingface.co/microsoft/phi-4) model.
 - [`peleke-llama-3.1-8b-instruct`](https://huggingface.co/silicobio/peleke-llama-3.1-8b-instruct), based on [Meta's Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B) model.
 
 You can also fine-tune your own `peleke-1`-like model by following the fine-tuning logic that can be found under [scripts/](scripts/).
