@@ -180,7 +180,7 @@ data/sabdab/pdbs.tar.gz
 data/.DS_Store
 .DS_Store
 requirementsV2.txt
-data/sabdab/contacts/    
+data/sabdab/contacts/
 
 # Model checkpoints
 # models/*/checkpoint-*
