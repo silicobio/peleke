@@ -18,6 +18,7 @@ Currently, the supported models are:
 - [`peleke-phi-4`](https://huggingface.co/silicobio/peleke-phi-4), based on [Microsoft's Phi-4](https://huggingface.co/microsoft/phi-4) model.
 - [`peleke-llama-3.1-8b-instruct`](https://huggingface.co/silicobio/peleke-llama-3.1-8b-instruct), based on [Meta's Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B) model.
 - [`peleke-mistral-7b-instruct-v0.2`](https://huggingface.co/silicobio/peleke-mistral-7b-instruct-v0.2), based on [Mistral's 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) model.
+- [`peleke-dayhoff`](https://huggingface.co/silicobio/peleke-dayhoff), based on [Microsoft's Dayhoff]() model.
 
 You can also fine-tune your own `peleke-1`-like model by following the fine-tuning logic that can be found under [scripts/](scripts/).
 
