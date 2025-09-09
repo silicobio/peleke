@@ -1,0 +1,32 @@
+[{
+ "name": "peleke_phi-4_ma-ccy4e_1",
+ "modelSeeds": [
+  "1337"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "QVQLQQPGAELVKPGASVKMSCKASGYTFTSYWMHWIKQRPGQGLEWIGEIDPSDSYTNYNEKFHKATLTVDKSSSTAYMQLNSLTSEDSAVYYCARDFDYWGQGTTLTVSS",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  },
+  {
+   "proteinChain": {
+    "sequence": "DIVMTQSPLSLPVTPGEPASISCRSSQSLLHSNGYNYLDWYLQKPGQSPQLLIYLGSNRASGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCMQALQTPLYTFGGGTKLEIK",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  },
+  {
+   "proteinChain": {
+    "sequence": "KVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 1
+}
+]
