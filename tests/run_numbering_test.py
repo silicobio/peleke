@@ -43,4 +43,5 @@ for idx, row in test_cases_df.iterrows():
 
 ## Save results to new Excel file
 output_file = 'numbering_test_results.csv'
+test_cases_df.drop(columns=['antigen_id','h_chain','l_chain','antigen_seqs'], inplace=True)
 test_cases_df.to_csv(output_file, index=False)
