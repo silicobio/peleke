@@ -18,8 +18,8 @@ remove_outliers_iqr <- function(x) {
 
 
 ## Load Data
-test_cases_df <- read_excel("../../tests/test_cases.xlsx", sheet = "generated_seqs")
-affinity_df <- read_csv("../../tests/binding_affinity_results.csv") %>% 
+test_cases_df <- read_excel("../tests/test_cases.xlsx", sheet = "generated_seqs")
+affinity_df <- read_csv("../tests/binding_affinity_results.csv") %>% 
   mutate(
     seq_id = str_replace_all(seq_id, c("predicted__" = "", "__esm3" = "")),
     score = remove_outliers_iqr(score)
