@@ -167,6 +167,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+.vscode/settings.json
+
 # Ruff stuff:
 .ruff_cache/
 
@@ -177,14 +179,23 @@ cython_debug/
 data/therasabdab/pdb_files/
 data/sabdab/pdbs/
 data/sabdab/pdbs.tar.gz
+
+# Misc
 data/.DS_Store
 .DS_Store
 requirementsV2.txt
 data/sabdab/contacts/
+.Rhistory
+logs/*
+paper/analyses/stability/executables/foldx5_1Mac/*
+
 
 # Model checkpoints
 # models/*/checkpoint-*
 models/*
-.Rhistory
-logs/*
-.vscode/settings.json
+
+## PDB Files
+tests/structures/old/predicted_complexes/*
+tests/structures/predicted_complexes/*
+tests/structures/relaxed_complexes/*
+
