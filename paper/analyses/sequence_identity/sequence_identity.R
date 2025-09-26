@@ -73,16 +73,16 @@ h_seq_identity_df_pvt <- h_seq_identity_df %>%
 ## Fill out the light matrix
 for(j in 1:ncol(l_seq_identity)){
   for(i in 1:nrow(l_seq_identity)){
-    diffused_name <- row.names(l_seq_identity)[i]
-    reference_name <- colnames(l_seq_identity)[j]
+    generated_name <- row.names(l_seq_identity)[i]
+    reference_name <- colnames(;_seq_identity)[j]
     
-    seq1 <- data %>% filter(antibody_id == diffused_name) %>% 
-      pull(l_chain)
+    seq1 <- generated_fvs %>% filter(seq_id == generated_name) %>% 
+      pull(h_chain)
     
-    seq2 <- data %>% filter(antibody_id == reference_name) %>% 
-      pull(l_chain)
+    seq2 <- reference_fvs %>% filter(pdb_id == reference_name) %>% 
+      pull(h_chain_fv_seq)
     
-    paste0("Getting sequence identity for: ", diffused_name, " X ", reference_name)
+    paste0("Getting sequence identity for: ", generated_name, " X ", reference_name)
     
     l_seq_identity[i,j] <- get_identity(seq1, seq2)
   }
