@@ -2,7 +2,7 @@
 
 Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
-<h4 align="right">Trey Pridgen, Nicholas Santolla, Prbhuv Nigam, and Colby T. Ford</h4><h3 align="right">Silico Biosciences</h3>
+<h4 align="right">Nicholas Santolla, Trey Pridgen, Prbhuv Nigam, and Colby T. Ford</h4><h3 align="right">Silico Biosciences</h3>
 
 
 ## About
