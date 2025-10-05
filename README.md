@@ -10,8 +10,16 @@ Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
 ## Generate Antibody Sequences
 
-```bash
-python scripts/generate.py --antigen "MKT[LLI]LAV[AA]A..." --model "peleke-phi-4"
+```python
+model_name = 'silicobio/peleke-phi-4'
+config = PeftConfig.from_pretrained(model_name)
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+
+model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, torch_dtype=torch.bfloat16, trust_remote_code=True).cuda()
+model.resize_token_embeddings(len(tokenizer))
+model = PeftModel.from_pretrained(model, model_name).cuda()
+
 ```
 
 Currently, the supported models are:
@@ -23,11 +31,18 @@ You can also fine-tune your own `peleke-1`-like model by following the fine-tuni
 
 ### Tokenization
 
-The `peleke-1` suite of models expects an amino acid sequence of an antigen protein as an input. Epitope residues should be enclosed in square brackets `[ ]`. This string will then get formatting into the model's expected input format that will work with the model's tokenizer.
+The `peleke-1` suite of models expects an amino acid sequence of an antigen protein as an input. Epitope residues should be enclosed in `<epi>` and `</epi>>` tokens.
+However, if you prefer to use square brackets `[ ]`, which are easier, use the following function:
+
+```python
+def format_prompt(antigen_sequence):
+    epitope_seq = re.sub(r'\[([A-Z])\]', r'<epi>\1</epi>', antigen_sequence)
+    formatted_str = f"Antigen: {epitope_seq}<|im_end|>\nAntibody:"
+    return formatted_str
+```
 
 For example, `AAM[K][R]HGL[D][N][Y]RG` will get formatted as `AAM<epi>K</epi><epi>R</epi>HGL<epi>D</epi><epi>N</epi><epi>Y</epi>RG`, using `<epi>` and `</epi>` as special tags.
 
-There are also special tags for the antigen and antibody sequences.
 
 ## Training Dataset
 
