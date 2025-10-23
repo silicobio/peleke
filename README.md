@@ -1,8 +1,10 @@
-# peleke 🦋
+# peleke-1 🦋
 
 Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
 <h4 align="right">Nicholas Santolla, Trey Pridgen, Prbhuv Nigam, and Colby T. Ford</h4><h3 align="right">Silico Biosciences</h3>
+
+[![Preprint](https://img.shields.io/badge/biorXiv-10.1101/2025.10.16.682644-bd2736?style=for-the-badge&logo=read.cv)](https://www.biorxiv.org/content/10.1101/2025.10.16.682644)
 
 
 ## About
@@ -82,3 +84,22 @@ The training dataset consists of paired antigen and antibody sequences, where th
     2. Detect contacts and highlight epitopes: [data/sabdab/02b_pandaprot_parallel.ipynb](data/sabdab/02b_pandaprot_parallel.ipynb)
     3. Generate the training dataset: [data/sabdab/03_generate_dataset.ipynb](data/sabdab/03_generate_dataset.ipynb)
 
+## Citation
+If you use the _peleke-1_ models, tuning code, or antibody-antigen dataset, we'd love for you to cite us.
+
+```
+Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T. (2025). “peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation.” bioRxiv. https://doi.org/10.1101/2025.10.16.682644
+```
+
+```bibtex
+@article{peleke-1,
+	author = {Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T.},
+	title = {peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation},
+	elocation-id = {2025.10.16.682644},
+	year = {2025},
+	doi = {10.1101/2025.10.16.682644},
+	publisher = {Cold Spring Harbor Laboratory},
+	eprint = {https://www.biorxiv.org/content/early/2025/10/16/2025.10.16.682644.full.pdf},
+	journal = {bioRxiv}
+}
+```
