@@ -92,7 +92,7 @@ This work was presented at the [7th Molecular Machine Learning Conference (MoML 
 [![](paper/poster/peleke-1_poster_MoML2025.png)](paper/poster/peleke-1_poster_MoML2025.pdf)
 
 ## Citation
-If you use the _peleke-1_ models, tuning code, or antibody-antigen dataset, we'd love for you to cite us.
+If you use the _peleke-1_ models, tuning code, or the antibody-antigen dataset, we'd love for you to cite us.
 
 ```
 Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T. (2025). “peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation.” bioRxiv. https://doi.org/10.1101/2025.10.16.682644
