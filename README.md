@@ -84,6 +84,13 @@ The training dataset consists of paired antigen and antibody sequences, where th
     2. Detect contacts and highlight epitopes: [data/sabdab/02b_pandaprot_parallel.ipynb](data/sabdab/02b_pandaprot_parallel.ipynb)
     3. Generate the training dataset: [data/sabdab/03_generate_dataset.ipynb](data/sabdab/03_generate_dataset.ipynb)
 
+## Poster
+
+This work was presented at the [7th Molecular Machine Learning Conference (MoML @ MIT 2025)](https://www.moml.mit.edu/posters#:~:text=peleke%2D1%3A%20A%20Suite%20of%20Protein%20Language%20Models%20Fine%2DTuned%20for%20Targeted%20Antibody%20Sequence%20Generation) on October 22, 2025. Here's our poster:
+
+
+[![](paper/poster/peleke-1_poster_MoML2025.png)](paper/poster/peleke-1_poster_MoML2025.pdf)
+
 ## Citation
 If you use the _peleke-1_ models, tuning code, or antibody-antigen dataset, we'd love for you to cite us.
 
