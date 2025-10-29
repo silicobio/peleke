@@ -8,11 +8,15 @@ Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
 
 ## About
-`Peleke-1` is a suite of antibody language models that were fine-tuned to generate antibody sequences that specifically target given antigen sequences. By leveraging advanced protein language models and general large language models, each `peleke-1` model aims to streamline the process of *in silico* antibody design.
+`peleke-1` is a suite of antibody language models that were fine-tuned to generate antibody sequences that specifically target given antigen sequences. By leveraging advanced protein language models and general large language models, each `peleke-1` model aims to streamline the process of *in silico* antibody design.
 
 ## Generate Antibody Sequences
 
 ```python
+from peft import PeftModel, PeftConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
 model_name = 'silicobio/peleke-phi-4'
 config = PeftConfig.from_pretrained(model_name)
 
