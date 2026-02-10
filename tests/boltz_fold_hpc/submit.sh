@@ -18,4 +18,4 @@ export BOLTZ_CACHE=/scratch/cford38/boltz2_resources
 
 module load cuda/12.8
 
-singularity exec --nv $SINGULARITY_CONTAINER_HOME/boltz2.sif boltz predict $1 --use_msa_server --accelerator gpu
+singularity exec --nv $SINGULARITY_CONTAINER_HOME/boltz2.sif boltz predict $1 --use_msa_server --write_full_pae --accelerator gpu
