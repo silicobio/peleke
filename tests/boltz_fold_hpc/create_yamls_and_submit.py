@@ -10,16 +10,22 @@ def create_boltz_yaml(h_chain: str, l_chain: str, a_chain: str, output_path: str
     config_json = {
         "version": 1,
         "sequences": [
+            # {
+            #     "protein": {
+            #         "id": "H",
+            #         "sequence": h_chain,
+            #     }
+            # },
+            # {
+            #     "protein": {
+            #         "id": "L",
+            #         "sequence": l_chain,
+            #     }
+            # },
             {
                 "protein": {
-                    "id": "H",
-                    "sequence": h_chain,
-                }
-            },
-            {
-                "protein": {
-                    "id": "L",
-                    "sequence": l_chain,
+                    "id": "B",
+                    "sequence": f"{h_chain}GGGGSGGGGSGGGGSGGGGS{l_chain}", ## Frankenchain
                 }
             },
             {
