@@ -1,10 +1,11 @@
-import re, os
+import re, os, glob
 import subprocess
 import pandas as pd
 
 ## Find all .pdb files in a directory
-structures_dir = '/mnt/tests/structures/predicted_complexes'
-pdb_files = [f for f in os.listdir(structures_dir) if f.endswith('.pdb')]
+structures_dir = '/mnt/tests/structures/boltz2_predicted_complexes/boltz_folding/'
+# pdb_files = [f for f in os.listdir(structures_dir) if f.endswith('.pdb')]
+pdb_files = glob.glob(os.path.join(structures_dir, "**/*.cif"), recursive=True)
 
 def haddock3_score(pdb_path:str) -> dict:
   try:
@@ -53,5 +54,5 @@ for pdb_file in pdb_files:
 
 
 ## Save results to CSV
-output_file = 'binding_affinity_results.csv'
+output_file = 'binding_affinity_results_boltz2.csv'
 affinity_df.to_csv(output_file, index=False)
