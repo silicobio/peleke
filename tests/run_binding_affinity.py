@@ -5,7 +5,7 @@ import pandas as pd
 ## Find all .pdb files in a directory
 structures_dir = '/mnt/tests/structures/boltz2_predicted_complexes/boltz_folding/'
 # pdb_files = [f for f in os.listdir(structures_dir) if f.endswith('.pdb')]
-pdb_files = glob.glob(os.path.join(structures_dir, "**/*.cif"), recursive=True)
+pdb_files = glob.glob(os.path.join(structures_dir, "**/*.pdb"), recursive=True)
 
 def haddock3_score(pdb_path:str) -> dict:
   try:
