@@ -5,6 +5,9 @@ import yaml
 ## Read experiment data from Excel file
 experiment_df = pd.read_excel("../test_cases.xlsx", sheet_name="experiments")
 
+## Filter to only include rows where 'folded_boltz2' is False
+experiment_df = experiment_df[experiment_df['folded_boltz2'] == False]
+
 ## Define function to create Boltz-2 YAML configuration for multimer folding
 def create_boltz_yaml(h_chain: str, l_chain: str, a_chain: str, output_path: str):
     config_json = {
