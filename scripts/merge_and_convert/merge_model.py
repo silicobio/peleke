@@ -1,6 +1,7 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
+import argparse
 
 import os
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
