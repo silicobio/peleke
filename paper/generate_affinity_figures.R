@@ -19,7 +19,8 @@ remove_outliers_iqr <- function(x) {
 
 ## Load Data
 test_cases_df <- read_excel("../tests/test_cases.xlsx", sheet = "generated_seqs")
-affinity_df <- read_csv("../tests/binding_affinity_results.csv") %>% 
+# affinity_df <- read_csv("../tests/binding_affinity_results_esm3.csv") %>% 
+affinity_df <- read_csv("../tests/binding_affinity_results_boltz2.csv") %>% 
   mutate(
     seq_id = str_replace_all(seq_id, c("predicted__" = "", "__esm3" = "")),
     score = remove_outliers_iqr(score)
@@ -34,7 +35,7 @@ affinity_merged_df <- test_cases_df %>%
 
 
 ## Hits by antigen/model
-threshold = -25
+threshold = -30
 hits_by_antigen <- affinity_merged_df %>%
   group_by(antigen_id, model) %>%
   summarise(
@@ -70,8 +71,26 @@ ggdensity(affinity_merged_df, x = "score",
 
 ggboxplot(affinity_merged_df,
           x = "model", y = "score",
+          ylab = "Binding Affinity Score",
           color = "model",
           palette = c("#00AFBB", "#E7B800", "#FC4E07"),
           add = "jitter",
           facet.by = "antigen_id"
-          ) + ylim(-250, 250)
+          ) +
+  theme_linedraw()
+  # ylim(-250, 250)
+
+
+ggplot(affinity_merged_df, aes(x=model, y=score, fill=model)) +
+  geom_boxplot() +
+  labs(y = "◀ Binding Affinity Score") + 
+  scale_fill_manual(values=c("#0080ff", "#ff8000", "#ff0080")) +
+  facet_wrap(~ antigen_id) +
+  theme_linedraw() +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.grid.major = element_line(color = "grey90", size = 0.4),
+    panel.grid.minor = element_line(color = "grey90", size = 0.2),
+    legend.position = c(0.70, 0.15),
+        )
