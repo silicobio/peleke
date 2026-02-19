@@ -64,7 +64,17 @@ ggplot(data=affinity_merged_df, aes(x=score, group=model, fill=model)) +
 ggdensity(affinity_merged_df, x = "score",
           add = "median", rug = TRUE,
           color = "model", fill = "model", facet.by = "antigen_id",
-          palette = c("#00AFBB", "#E7B800", "#FC4E07")) + xlim(-250, 0)
+          palette = c("#0080ff", "#ff8000", "#ff0080")) +
+  labs(x = "Binding Affinity Score", y = "Density") +
+  theme_linedraw() +
+  theme(
+    # axis.title.x = element_blank(),
+    # axis.text.x = element_blank(),
+    panel.grid.major = element_line(color = "grey90", size = 0.4),
+    panel.grid.minor = element_line(color = "grey90", size = 0.2),
+    legend.position = c(0.70, 0.15),
+  ) + 
+  xlim(-250, 0)
 
 
 ## ggpubr boxplot
@@ -73,19 +83,27 @@ ggboxplot(affinity_merged_df,
           x = "model", y = "score",
           ylab = "Binding Affinity Score",
           color = "model",
-          palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+          palette = c("#0080ff", "#ff8000", "#ff0080"),
           add = "jitter",
           facet.by = "antigen_id"
           ) +
-  theme_linedraw()
+  theme_linedraw() + 
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.grid.major = element_line(color = "grey90", size = 0.4),
+    panel.grid.minor = element_line(color = "grey90", size = 0.2),
+    legend.position = c(0.70, 0.15),
+  )
   # ylim(-250, 250)
 
-
+## Save as 5x7.25in
 ggplot(affinity_merged_df, aes(x=model, y=score, fill=model)) +
   geom_boxplot() +
-  labs(y = "◀ Binding Affinity Score") + 
+  labs(y = "Binding Affinity Score") + # ◀
   scale_fill_manual(values=c("#0080ff", "#ff8000", "#ff0080")) +
   facet_wrap(~ antigen_id) +
+  # stat_compare_means() +
   theme_linedraw() +
   theme(
     axis.title.x = element_blank(),
