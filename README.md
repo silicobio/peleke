@@ -33,6 +33,8 @@ Currently, the supported models are:
 - [`peleke-llama-3.1-8b-instruct`](https://huggingface.co/silicobio/peleke-llama-3.1-8b-instruct), based on [Meta's Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B) model.
 - [`peleke-mistral-7b-instruct-v0.2`](https://huggingface.co/silicobio/peleke-mistral-7b-instruct-v0.2), based on [Mistral's 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) model.
 
+The full collection of `peleke-1` models can be found on Hugging Face: [silicobio/peleke-1](https://huggingface.co/collections/silicobio/peleke-1). This collection also includes "merged" versions of the models (base model + LoRA weights and custom tokenizer) and GGUF versions (for easy local inferencing using tools like Ollama).
+
 You can also fine-tune your own `peleke-1`-like model by following the fine-tuning logic that can be found under [scripts/](scripts/).
 
 ### Tokenization
