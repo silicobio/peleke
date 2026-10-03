@@ -199,3 +199,4 @@ tests/structures/old/predicted_complexes/*
 tests/structures/boltz2_predicted_complexes/*
 tests/structures/esm3_predicted_complexes/*
 tests/structures/predicted_complexes/*
+tests/structures/relaxed_complexes/*
