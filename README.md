@@ -4,7 +4,12 @@ Fine-Tuned Protein Language Models for Targeted Antibody Sequence Generation.
 
 <h4 align="right">Nicholas Santolla, Trey Pridgen, Prbhuv Nigam, and Colby T. Ford</h4><h3 align="right">Silico Biosciences</h3>
 
-[![Preprint](https://img.shields.io/badge/biorXiv-10.1101/2025.10.16.682644-bd2736?style=for-the-badge&logo=read.cv)](https://www.biorxiv.org/content/10.1101/2025.10.16.682644)
+<!--[![Preprint](https://img.shields.io/badge/biorXiv-10.1101/2025.10.16.682644-bd2736?style=for-the-badge&logo=read.cv)](https://www.biorxiv.org/content/10.1101/2025.10.16.682644)-->
+
+
+[![Paper](https://img.shields.io/badge/Viral_Immunology-10.1177/08828245261499794-001a69?style=for-the-badge&logo=read.cv)](https://journals.sagepub.com/doi/10.1177/08828245261499794)
+
+
 
 
 ## About
