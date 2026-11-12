@@ -105,9 +105,10 @@ This work was presented at the [7th Molecular Machine Learning Conference (MoML 
 ## Citation
 If you use the _peleke-1_ models, tuning code, or the antibody-antigen dataset, we'd love for you to cite us.
 
-```
+<!--```
 Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T. (2025). “peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation.” bioRxiv. https://doi.org/10.1101/2025.10.16.682644
 ```
+
 
 ```bibtex
 @article{peleke-1,
@@ -119,5 +120,24 @@ Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T. (2025)
 	publisher = {Cold Spring Harbor Laboratory},
 	eprint = {https://www.biorxiv.org/content/early/2025/10/16/2025.10.16.682644.full.pdf},
 	journal = {bioRxiv}
+}
+```-->
+
+
+
+```
+Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and Ford, Colby T. (2026). “peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation.” Viral Immunology. https://doi.org/10.1177/08828245261499794
+```
+
+```bibtex
+@article{peleke-1,
+    author = {Santolla, Nicholas and Pridgen, Trey and Nigam, Prbhuv and \textbf{Colby T. Ford}},
+    title ={{peleke-1: A Suite of Protein Language Models Fine-Tuned for Targeted Antibody Sequence Generation}},
+    journal = {Viral Immunology},
+    year = {2026},
+    doi = {10.1177/08828245261499794},
+    note ={PMID: 43009741},
+    URL = {https://doi.org/10.1177/08828245261499794},
+    eprint = {https://doi.org/10.1177/08828245261499794}
 }
 ```
